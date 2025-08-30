@@ -1,9 +1,75 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML + CSS + JS Example</title>
+  <style>
+    /* CSS Styling */
+    body {
+      font-family: Arial, sans-serif;
+      background: #f0f4f8;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .card {
+      background: white;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+      text-align: center;
+    }
+
+    h1 {
+      color: #333;
+    }
+
+    button {
+      margin-top: 15px;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 8px;
+      background: #007bff;
+      color: white;
+      font-size: 16px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    button:hover {
+      background: #0056b3;
+    }
+
+    p {
+      font-size: 18px;
+      color: #555;
+      margin-top: 15px;
+    }
+  </style>
+</head>
 <body>
 
-<h1>welcum
+  <div class="card">
+    <h1>Hello, World! 🌍</h1>
+    <button onclick="changeMessage()">Click Me</button>
+    <p id="message">Welcome to my webpage!</p>
+  </div>
 
+  <script>
+    // JavaScript Function
+    function changeMessage() {
+      const msg = document.getElementById("message");
+      msg.textContent = "You just clicked the button 🚀";
+      msg.style.color = "#007bff";
+    }
+  </script>
 
 </body>
-
 </html>
+
+
